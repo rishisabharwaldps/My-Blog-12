@@ -1,0 +1,32 @@
+<html>
+    <body>
+        
+        <h2>My Family Book</h2>
+        <div>
+        <img id="album" src="https://cdn.slidesharecdn.com/ss_thumbnails/thefamilybookbytoddparr-180213151928-
+        thumbnail-4.jpg?cb=1518535198" height="500" width="400">
+        <p id="name"></p>
+       <button type="button" onclick="nextslide()"> Next </button>
+    </div>
+    <script>
+        var show_name =family_names
+        console.log(show_name)
+        document.getElementById("reasontext").innerHTML=show_name;
+
+        var images = [
+  "https://apis.mail.yahoo.com/ws/v3/mailboxes/@.id==VjN-fmhwaYHZ8Fvz6XrdC8ovH7HVxGqt1Eh2BBLpxdh1O-NSz11FUxkepW_lXvD_9M_a6F676llwJijNHGM9Rx73ng/messages/@.id==ABt_gFJXybJjYCfooQiykPpitd8/content/parts/@.id==2/thumbnail?appid=YMailNorrinLaunch",
+  "https://apis.mail.yahoo.com/ws/v3/mailboxes/@.id==VjN-fmhwaYHZ8Fvz6XrdC8ovH7HVxGqt1Eh2BBLpxdh1O-NSz11FUxkepW_lXvD_9M_a6F676llwJijNHGM9Rx73ng/messages/@.id==ADgpVZpStRmxYCfo3gG9UFZLkAw/content/parts/@.id==2/thumbnail?appid=YMailNorrin",
+  "https://apis.mail.yahoo.com/ws/v3/mailboxes/@.id==VjN-fmhwaYHZ8Fvz6XrdC8ovH7HVxGqt1Eh2BBLpxdh1O-NSz11FUxkepW_lXvD_9M_a6F676llwJijNHGM9Rx73ng/messages/@.id==AJfx_nso6l5kYCfq7AUBQDozmpc/content/parts/@.id==2/thumbnail?appid=YMailNorrinLaunch"
+];
+var family_names = [
+  "Nishant Sabharwal",
+ "Disha Dubey",
+  "Rishi Sabharwal",
+];
+document.getElementById("name").innerHTML = show_name[i];
+
+  document.getElementById("album").src = images[i];
+  i++;
+    </script>
+    </body>
+</html>
